@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: #6B3CC9;
+    height: 77px;
+    width: 100%;
+    position: relative;
+    padding: 26px, 20px, 26px, 20px;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.icon {
+    padding: auto;
+}
+
+.ms-2 {
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.ms-2 h2 {
+    margin: 0;
+}
+
+.desktop-nav-links {
+    display: block;
+    margin-left: auto;
+}
+
+.mobile-menu-icon {
+    display: none;
+    margin-left: auto;
+}
+
+.mobile-dropdown-menu {
+    display: none;
+}
+
+.mobile-menu-icon i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+@media(max-width:720px){
+    .desktop-nav-links{
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .mobile-dropdown-menu a {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+
+    .mobile-dropdown-menu a:hover {
+        background-color: #f2f2f2;
+    }
+}
+
+@media (max-width: 375px) {
+    .desktop-nav-links {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .mobile-dropdown-menu a {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+
+    .mobile-dropdown-menu a:hover {
+        background-color: #f2f2f2;
+    }
+}
