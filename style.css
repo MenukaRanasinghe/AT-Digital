@@ -138,8 +138,9 @@ body{
 }
 
 .right-side h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin-bottom: 10px;
+    color: #6B3CC9;
 }
 
 .right-side p {
@@ -177,7 +178,7 @@ body{
 }
 
 .left-side2 {
-    width: calc(100% - 346px);
+    width: calc(100% - 275px);
     padding: 20px;
 }
 
@@ -195,8 +196,9 @@ body{
 }
 
 .left-side2 h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin-bottom: 10px;
+    color: #6B3CC9;
 }
 
 .left-side2 p {
@@ -216,12 +218,120 @@ body{
     height: 38px;
 }
 
+.question {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1070px;
+    text-align: center;
+    width: 846px;
+    height: 392px;
+    padding: 24px;
+    gap: 13px;
+}
+.first {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 846px;
+    height:auto;
+    background-color: #FAF8FF;
+    border-radius: 7px;
+    gap: 40px;
+    padding: auto;
+    margin-bottom: 10px;
+    
+}
+.qfirst , .qfirst2, .qfirst3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 846px;
+    height:auto;
+    background-color: #FAF8FF;
+    border-radius: 7px;
+    gap: 40px;
+    padding: auto;
+    margin-bottom: 10px;
+}
+.qleft , .qleft2, .qleft3{
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.qright , .qright2 , .qright3{
+    text-align: right;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.qright i {
+    font-size: 18px;
+    color: #6B3CC9;
+    cursor: pointer;
+}
+.p1{
+    font-size: 27px;
+    color: #6B3CC9;
+}
+
+.p2{
+    font-size: 22px;
+    color: #6B3CC9;
+    margin-bottom: 5px;
+}
+
+.p3{
+    font-size: 18px;
+    color: #6F6C90;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around; /* or space-evenly */
+    align-items: center;
+    background-color: #FAF8FF;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top:-20px;
+}
+
+.qright2 i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.p4{
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 24px;
+}
+.p5{
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 24px;
+}
+
 @media(max-width:1100px){
     .image-text p{
         font-size: 40px;
     }
     .content-container , .content-container2{
         width: 100%;
+    }
+}
+
+@media(max-width:900px){
+    .question{
+        width: 90%;
+        max-width: 500px; 
+    }
+    .first , .qfirst , .qfirst2 , .qfirst3{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 }
 @media(max-width: 768px) {
@@ -267,36 +377,60 @@ body{
         background-color: #f2f2f2;
     }
 }
+@media (max-width: 500px) {
+    .content-container,
+    .content-container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        height: 0;
+    }
 
+    .right-side,
+    .left-side2 {
+        order: 2; /* Change the order of display for smaller screens */
+    }
 
-@media(max-width:500px){
-.left-side, .right-side , .left-side2 , .right-side2{
+    .left-side,
+    .right-side2 {
+        order: 1; /* Change the order of display for smaller screens */
+    }
+
+    .left-side,
+    .left-side2,
+    .right-side,
+    .right-side2 {
         width: auto;
     }
-.left-side , .right-side2{
-  order: 1;
-}
-.right-side , .left-side2{
-    order: 2;
-}
-.right-side2{
-    margin-top: 50px;
-}
-.right-side p, 
-.right-side h2, 
-.right-side button,
-.left-side2 p,
-.left-side2 h2,
-.left-side2 button {
-    margin: auto;
-    padding: auto;
-    align-items: center;
-    justify-content: center;
-}
+    .right-side2{
+        margin-top: 1500px;
+        margin-bottom: 50px;
+    }
+    .content-container {
+        margin-bottom: 100px;
+    }
 
-.content-container , .content-container2{
-    flex-direction: column;
-}
+    .content-container2 {
+        margin-bottom: 10px;
+        margin-top: 20px; /* Adjusted margin-top to create space */
+    }
+
+    .p2 {
+        font-size: 20px;
+    }
+
+    .p3 {
+        font-size: 16px;
+    }
+
+    .p4,
+    .p5 {
+        font-size: 20px;
+    }
+    .question{
+        margin-top: 1600px;
+    }
 }
 
 
@@ -331,5 +465,3 @@ body{
         background-color: #f2f2f2;
     }
 }
-
-
